@@ -18,5 +18,8 @@ __pycache__/
 # Ignorar CSVs e outros arquivos gerados automaticamente, se necessário
 *.csv
 
-# Ignorar o ambiente virtual
+# Ignorar a pasta data e seus arquivos
+data/
+
+# Ignorar a pasta docs e seus arquivos
 docs/

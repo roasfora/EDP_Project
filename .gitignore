@@ -1,0 +1,22 @@
+# Ignorar o ambiente virtual
+venv/
+
+# Ignorar arquivos temporários do sistema operacional
+*.DS_Store
+Thumbs.db
+
+# Ignorar arquivos do Python
+__pycache__/
+*.pyc
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do Office temporários
+~$*
+
+# Ignorar CSVs e outros arquivos gerados automaticamente, se necessário
+*.csv
+
+# Ignorar o ambiente virtual
+docs/

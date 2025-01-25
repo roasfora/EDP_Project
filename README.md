@@ -1,6 +1,6 @@
 # **EDP Project**
 
-Este projeto tem como objetivo coletar e processar dados relacionados à **EDP Portugal (EDP.LS)**, combinando APIs, web scraping, e ferramentas de manipulação de dados. O foco principal está em adquirir dados financeiros e notícias relevantes para análises.
+Este projeto tem como objetivo coletar e processar dados relacionados à **EDP Portugal (EDP.LS)**, utilizando APIs, web scraping e ferramentas de manipulação de dados. Ele combina dados financeiros e notícias relevantes para análises e insights.
 
 ---
 
@@ -9,7 +9,7 @@ Este projeto tem como objetivo coletar e processar dados relacionados à **EDP P
 ### **1. Coleta de Dados Históricos da Ação**
 - Conexão com a **API Alpha Vantage**.
 - Coleta de dados ajustados mensais da ação **EDP Portugal**.
-- Armazenamento dos dados em um arquivo CSV.
+- Armazenamento dos dados em um arquivo CSV para análise futura.
 
 ### **2. Web Scraping**
 #### **a. Taxa de Câmbio EUR para USD**
@@ -18,7 +18,7 @@ Este projeto tem como objetivo coletar e processar dados relacionados à **EDP P
 
 #### **b. Notícias sobre EDP no site Lusa**
 - Utiliza **Selenium** para acessar e extrair títulos e links de notícias sobre a EDP no site **Lusa.pt**.
-- Salva os resultados em um arquivo CSV.
+- Salva os resultados em um arquivo CSV organizado para análise.
 
 ---
 
@@ -35,6 +35,9 @@ EDP_Project/
 │   ├── monthly_adjusted_data.csv   # Dados da API Alpha Vantage
 │   ├── eur_to_usd_rates.csv        # Taxa de câmbio EUR para USD
 │   ├── lusa_edp_news.csv           # Notícias sobre a EDP
+│
+├── dags/                       # DAGs para o Apache Airflow
+│   ├── fetch_eur_to_usd_rate.py    # DAG para scraping da taxa de câmbio
 │
 ├── requirements.txt            # Bibliotecas e dependências do projeto
 └── README.md                   # Documentação do projeto

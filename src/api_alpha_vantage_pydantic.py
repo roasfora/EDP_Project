@@ -52,10 +52,10 @@ def fetch_monthly_adjusted_data(symbol: str):
     ]
     df = df.sort_index()
 
-    # Save as CSV
+    # Save as CSV with an explicit header for the index column
     output_path = "./data/monthly_adjusted_data.csv"
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    df.to_csv(output_path)
+    df.to_csv(output_path, index_label="date")  # Ensure index column is labeled
     print(f"Data saved to {output_path}")
 
     return df
